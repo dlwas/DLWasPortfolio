@@ -1,0 +1,30 @@
+ @mixin breakpoint($point) {
+     @if $point==fullhd {
+         @media (min-width: 1200px) {
+             @content ;
+         }
+     }
+
+     @if $point==desktop {
+         @media (min-width: 769px) and (max-width: 1199px) {
+             @content ;
+         }
+     }
+
+     @if $point==mobile {
+         @media (min-width: 360px) and (max-width: 768px) {
+             @content ;
+         }
+     }
+
+     @if $point==mobilemin {
+         @media (max-width: 360px) {
+             @content ;
+         }
+     }
+ }
+
+ //  360px
+ //  768px
+ //  992px
+ //  1200px
