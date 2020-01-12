@@ -34,6 +34,7 @@
 
   html {
     background: #000000;
+    overflow: hidden;
   }
 
   #app {
@@ -75,8 +76,8 @@
   .bg {
     z-index: -100;
     position: absolute;
-    width: 100vw;
-    height: 100vh;
+    width: calc(100vw - 2rem);
+    height: calc(100vh - 2rem);
     overflow: hidden;
 
     img {
